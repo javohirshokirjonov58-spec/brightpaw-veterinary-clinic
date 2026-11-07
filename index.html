@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brightpaw — Compassionate, Fear-Free Animal Health & Hospital</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+  </style>
+</head>
+<body class="bg-[#F8FAFC] text-slate-900 antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- Emergency Banner -->
+  <div class="bg-sky-600 text-white py-2 px-6 text-center text-xs font-semibold flex items-center justify-center gap-2">
+    <i data-lucide="phone-call" class="w-3.5 h-3.5"></i>
+    <span>24/7 Urgent Pet Emergency Triage: (800) 555-PAWS • Walk-ins Always Welcomed</span>
+  </div>
+
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="w-10 h-10 rounded-2xl bg-sky-500 text-white flex items-center justify-center shadow-lg shadow-sky-500/30">
+          <i data-lucide="heart" class="w-5 h-5 fill-current"></i>
+        </div>
+        <span class="text-2xl font-black text-slate-900 tracking-tight">Brightpaw<span class="text-sky-500">.</span></span>
+      </div>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+        <a href="#booking" class="hover:text-sky-600 transition">Online Booking</a>
+        <a href="#symptom-checker" class="hover:text-sky-600 transition">Symptom Checker</a>
+        <a href="#services" class="hover:text-sky-600 transition">Veterinary Care</a>
+        <a href="#team" class="hover:text-sky-600 transition">Our Doctors</a>
+      </nav>
+      <a href="#booking" class="px-5 py-2.5 rounded-full bg-sky-500 hover:bg-sky-600 text-white text-xs font-bold uppercase tracking-wider transition shadow-md shadow-sky-500/20">
+        Book Appointment
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="py-20 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+    <div class="space-y-6">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-100 text-sky-700 text-xs font-bold">
+        <i data-lucide="award" class="w-4 h-4"></i> Fear-Free Certified Medical Practice
+      </div>
+      <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-slate-900 leading-tight">
+        Modern clinical medicine delivered with deep warmth.
+      </h1>
+      <p class="text-slate-600 text-base leading-relaxed">
+        State-of-the-art diagnostic surgery, preventative wellness exams, and feline-only quiet waiting rooms designed to minimize stress for your beloved companions.
+      </p>
+      <div class="flex gap-4 pt-2">
+        <a href="#booking" class="px-7 py-3.5 rounded-2xl bg-sky-500 hover:bg-sky-600 text-white font-bold text-sm transition shadow-lg shadow-sky-500/25">Schedule Checkup</a>
+        <a href="#symptom-checker" class="px-7 py-3.5 rounded-2xl bg-white border border-slate-300 hover:border-slate-400 font-bold text-sm text-slate-700 transition">Symptom Check</a>
+      </div>
+    </div>
+    <div class="rounded-3xl overflow-hidden shadow-2xl border border-slate-200">
+      <img src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&w=1000&q=80" alt="Veterinarian with Puppy" class="w-full h-[460px] object-cover">
+    </div>
+  </section>
+
+  <!-- Interactive Online Appointment Booking Wizard -->
+  <section id="booking" class="py-20 bg-white border-y border-slate-200">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center space-y-3 mb-12">
+        <span class="text-xs font-mono uppercase font-bold text-sky-600">Quick Reservation</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900">Book Your Pet's Visit in 60 Seconds</h2>
+      </div>
+
+      <div class="p-8 sm:p-10 rounded-3xl bg-[#F8FAFC] border border-slate-200 shadow-xl space-y-8">
+        <form onsubmit="event.preventDefault(); alert('Appointment confirmed! A calendar invite & reminder SMS has been sent.');" class="space-y-6">
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-500 mb-2">Pet Name & Species</label>
+              <input type="text" placeholder="e.g. Milo (Golden Retriever)" required class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl text-sm focus:outline-none focus:border-sky-500">
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-500 mb-2">Service Type</label>
+              <select class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl text-sm focus:outline-none focus:border-sky-500">
+                <option>Comprehensive Wellness Exam</option>
+                <option>Core Vaccinations & Deworming</option>
+                <option>Dental Scaling & Oral Surgery</option>
+                <option>Senior Pet Mobility Assessment</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-500 mb-2">Preferred Doctor</label>
+              <select class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl text-sm focus:outline-none focus:border-sky-500">
+                <option>Dr. Sarah Miller, DVM (Medical Director)</option>
+                <option>Dr. Aris Thorne, DVM (Feline Specialist)</option>
+                <option>First Available Veterinarian</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-500 mb-2">Select Date</label>
+              <input type="date" required class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl text-sm focus:outline-none focus:border-sky-500">
+            </div>
+          </div>
+
+          <button type="submit" class="w-full py-4 rounded-xl bg-sky-500 hover:bg-sky-600 text-white font-bold text-sm uppercase tracking-wider transition shadow-lg shadow-sky-500/20">
+            Confirm Instant Appointment
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Symptom Checker -->
+  <section id="symptom-checker" class="py-20 max-w-4xl mx-auto px-6">
+    <div class="text-center space-y-3 mb-12">
+      <span class="text-xs font-mono uppercase font-bold text-sky-600">Home Guidance</span>
+      <h2 class="text-3xl font-black">Pet Symptom Care Guide</h2>
+      <p class="text-xs text-slate-500">Select observed indicators to review urgency guidance.</p>
+    </div>
+
+    <div class="p-8 rounded-3xl bg-white border border-slate-200 shadow-md space-y-6">
+      <div class="grid grid-cols-3 gap-3">
+        <button onclick="checkSymptom('lethargy')" id="sym-lethargy" class="sym-btn p-3 rounded-xl border border-sky-500 bg-sky-50 text-sky-700 text-xs font-bold transition">Lethargy / Low Energy</button>
+        <button onclick="checkSymptom('diet')" id="sym-diet" class="sym-btn p-3 rounded-xl border border-slate-200 bg-slate-50 text-slate-600 text-xs font-bold transition">Loss of Appetite</button>
+        <button onclick="checkSymptom('limp')" id="sym-limp" class="sym-btn p-3 rounded-xl border border-slate-200 bg-slate-50 text-slate-600 text-xs font-bold transition">Sudden Limping</button>
+      </div>
+
+      <div id="symResult" class="p-6 rounded-2xl bg-sky-50/60 border border-sky-200 space-y-2">
+        <div class="flex items-center gap-2 text-sky-700 font-bold text-sm">
+          <i data-lucide="info" class="w-4 h-4"></i>
+          <span id="symUrgency">Urgency: Monitor Closely (24 Hours)</span>
+        </div>
+        <p class="text-xs text-slate-600" id="symAdvice">Mild fatigue can follow intense outdoor exercise or heat. However, if accompanied by pale gums, vomiting, or refusal to drink fresh water for 12+ hours, contact our urgent triage line immediately.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-slate-200 py-12 text-center text-xs text-slate-500">
+    <p>© 2026 Brightpaw Animal Hospital Ltd. Dedicated to the well-being of all creatures.</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    const symptoms = {
+      lethargy: {
+        urgency: 'Urgency: Monitor Closely (24 Hours)',
+        advice: 'Mild fatigue can follow intense outdoor exercise. If accompanied by refusal to drink or pale gums, contact emergency triage.'
+      },
+      diet: {
+        urgency: 'Urgency: Moderate Attention Needed',
+        advice: 'Cats skipping food for over 24 hours risk hepatic lipidosis. If a dog skips 2 consecutive meals with vomiting, book an exam.'
+      },
+      limp: {
+        urgency: 'Urgency: High Attention (Avoid Weight Bearing)',
+        advice: 'Check paws for torn pads, foreign foxtail thorns, or bee stings. If the pet will not put weight on the limb, an X-ray is advised.'
+      }
+    };
+
+    function checkSymptom(sym) {
+      document.querySelectorAll('.sym-btn').forEach(b => {
+        b.className = 'sym-btn p-3 rounded-xl border border-slate-200 bg-slate-50 text-slate-600 text-xs font-bold transition';
+      });
+      document.getElementById('sym-' + sym).className = 'sym-btn p-3 rounded-xl border border-sky-500 bg-sky-50 text-sky-700 text-xs font-bold transition';
+
+      const s = symptoms[sym];
+      document.getElementById('symUrgency').textContent = s.urgency;
+      document.getElementById('symAdvice').textContent = s.advice;
+    }
+  </script>
+</body>
+</html>
